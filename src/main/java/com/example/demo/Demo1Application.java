@@ -18,10 +18,9 @@ public class Demo1Application implements CommandLineRunner {
 		SpringApplication.run(Demo1Application.class, args);
 	}
 	@Override
-	public void run(String... args) throws Exception {
-		Compte compte1 = iCompteRepository.save(new Compte (1,1000,new Date()));
-		Compte compte2 = iCompteRepository.save(new Compte (2,2000,new Date()));
-		Compte compte3 = iCompteRepository.save(new Compte (3,3000,new Date()));
+	public void run(String... args) throws Exception {	Compte c = iCompteRepository.save(new Compte(2,1,"05/06/2012"));
+		iCompteRepository.save(c);
+
 
 	}
 }
