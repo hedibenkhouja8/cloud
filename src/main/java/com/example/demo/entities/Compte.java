@@ -17,7 +17,7 @@ public class Compte {
 	@Id @GeneratedValue
 	private long code ;
 	private double solde ;
-	private String datecreation;
+	private Date datecreation;
 	public long getCode() {
 		return code;
 	}
@@ -30,13 +30,13 @@ public class Compte {
 	public void setSolde(double solde) {
 		this.solde = solde;
 	}
-	public String getDatecreation() {
+	public Date getDatecreation() {
 		return datecreation;
 	}
-	public void setDatecreation(String datecreation) {
+	public void setDatecreation(Date datecreation) {
 		this.datecreation = datecreation;
 	}
-	public Compte(long code, double solde, String datecreation) {
+	public Compte(long code, double solde, Date datecreation) {
 		super();
 		this.code = code;
 		this.solde = solde;
